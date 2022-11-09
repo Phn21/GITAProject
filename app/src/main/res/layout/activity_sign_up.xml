@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eka"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50dp"
+        android:layout_margin="20dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/nameED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:hint="Full Name" />
+
+    <EditText
+        android:id="@+id/numberED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:padding="13dp"
+        android:inputType="phone"
+        android:hint="Phone Number" />
+
+    <EditText
+        android:id="@+id/locationED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:ems="10"
+        android:padding="15dp"
+        android:inputType="textPersonName"
+        android:hint="Location" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/giveBloodED"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:clickable="false"
+                android:layout_marginLeft="60dp"
+                android:padding="10dp"
+
+                android:layout_weight="2"
+                android:inputType="textPersonName"
+                android:hint="Date of donation" />
+
+            <Button
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background ="@drawable/calendar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ableToGiveED"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:padding="10dp"
+                android:ems="10"
+                android:clickable="false"
+                android:layout_weight="2"
+                android:inputType="textPersonName"
+                android:hint="ReDonation Date" />
+
+            <Button
+                android:id="@+id/calendar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background ="@drawable/calendar" />
+
+        </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="Select your blood type"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"/>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:nextFocusLeft="@color/black"
+                    android:padding="15dp"
+                    android:gravity="left"
+                    />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:weightSum="5"
+        android:orientation="horizontal">
+=
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_height="match_parent"
+            android:text="Tell us about your health issues!"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/healthIssuesED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_marginLeft="90dp"
+        android:visibility="invisible"
+        android:inputType="textPersonName"
+        android:hint="Health issues..." />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/registrationBT"
+                android:layout_margin="10dp"
+
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:background="@drawable/styles1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Registration" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
